@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GestorPessoal</string>
+    <string name="gastos">Gastos</string>
+    <string name="ganhos">Ganhos</string>
+</resources>
