@@ -5,10 +5,10 @@ import java.util.ArrayList;
 
 public class Gastos implements Serializable {
 
-    private ArrayList<Operacao> listaGastos;
+    private ArrayList<Operacao> listaGastos = new ArrayList<>();;
 
     public Gastos() {
-        listaGastos = new ArrayList<>();
+
     }
     public ArrayList<Operacao> getListaGastos() {
         return listaGastos;
