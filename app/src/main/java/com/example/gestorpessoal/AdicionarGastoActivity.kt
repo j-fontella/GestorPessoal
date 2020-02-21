@@ -1,5 +1,6 @@
 package com.example.gestorpessoal
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -33,9 +34,13 @@ class AdicionarGastoActivity : AppCompatActivity() {
     fun addGasto(view:View){
         var gastos = intent.getSerializableExtra("gastos") as Gastos
         gastos.addOperacao(eValor.text.toString().toDouble(), eDescricao.text.toString())
-        gastos.listaGastos.forEach{
-            println(it.descricao)
-            println(it.valor)
-        }
+
+       setResult(Activity.RESULT_OK, intent)
+        finish()
+
+//        gastos.listaGastos.forEach{
+//            println(it.descricao)
+//            println(it.valor)
+//        }
     }
 }
