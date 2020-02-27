@@ -34,7 +34,6 @@ class AdicionarGastoActivity : AppCompatActivity() {
     fun addGasto(view:View){
         var gastos = intent.getSerializableExtra("gastos") as Gastos
         gastos.addOperacao(eValor.text.toString().toDouble(), eDescricao.text.toString())
-
        setResult(Activity.RESULT_OK, intent)
         finish()
 
